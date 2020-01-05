@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title> -TEST-
+    </title>
+	<script src="jquery-3.4.1.min.js"></script>
+		<script>
+		function readFile() {
+	 		jQuery.get("data.txt", function(txt){
+				$('#htmlText').text(txt);
+			});
+		};
+	  
+	    </script>
+  </head>
+  <body onload="readFile();">
+      <h5 id = "htmlText">
+        
+      </h5>
+	  
+	  
+  </body>
+</html>
